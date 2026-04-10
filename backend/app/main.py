@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from . import models
 from .database import engine
-from .routes import folders, bookmarks
+from .routes import folders, bookmarks, search
 from .config import settings
 
 
@@ -22,6 +22,7 @@ app.add_middleware(
 
 app.include_router(folders.router)
 app.include_router(bookmarks.router)
+app.include_router(search.router)
 
 @app.get("/")
 async def root():

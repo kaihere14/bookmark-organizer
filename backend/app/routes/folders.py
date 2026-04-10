@@ -7,10 +7,10 @@ from app.models import Folder as FolderModel, Bookmark as BookmarkModel
 from app.schemas import Folder, FolderResponse, BookmarkResponse
 
 # Create API router for folder endpoints
-# Prefix: /folders
+# Prefix: /v1/folders
 # Tags: folders (for API documentation)
 router = APIRouter(
-    prefix="/folders",
+    prefix="/v1/folders",
     tags=["folders"],
 )
 
