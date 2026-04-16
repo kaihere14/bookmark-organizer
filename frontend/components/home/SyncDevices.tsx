@@ -4,7 +4,7 @@ import { SyncLine } from './SyncLine'
 
 const SyncDevices = () => {
   return (
-    <div className='mt-40 min-h-screen flex flex-col gap-10 max-w-6xl mx-auto'>
+    <div className='mt-40 flex flex-col gap-10 max-w-6xl mx-auto'>
       <h1 className='text-4xl font-bold tracking-tight self-center'>Sync Across Devices</h1>
 
       <div className='ml-30 w-[80%]'>

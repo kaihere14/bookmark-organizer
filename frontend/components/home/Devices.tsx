@@ -5,7 +5,7 @@ import Image from "next/image"
 export const Macbook = () => {
     return (
         <div className='h-50 w-80 perspective-distant group flex flex-col justify-center'>
-            <div className='h-[92%] w-[94%] self-center bg-neutral-900 dark:bg-[#101010] flex items-center justify-center rounded-t-xl border-t-3 border-x-3 border-b-2 border-neutral-300 dark:border-neutral-700 -rotate-x-60 group-hover:rotate-x-0 origin-bottom transition-all ease-[cubic-bezier(0.85, 0, 0.15, 1)] duration-600'>
+            <div className='h-[92%] w-[94%] self-center  dark:bg-[#101010] flex items-center justify-center rounded-t-xl border-t-3 border-x-3 border-b-2 border-neutral-300 dark:border-neutral-700 -rotate-x-60 group-hover:rotate-x-0 origin-bottom transition-all ease-[cubic-bezier(0.85, 0, 0.15, 1)] duration-600'>
                 <Image
                     className="opacity-0 group-hover:opacity-100 object-fit transition-all duration-600 ease-[cubic-bezier(0.85, 0, 0.15, 1)] h-full w-full object-contain"
                     height={1000}
@@ -28,7 +28,7 @@ export const Phone = () => {
             <div className="absolute top-[53px] -left-[4px] w-px h-5 bg-neutral-400 dark:bg-neutral-600 rounded-l-md"></div>
             <div className="absolute top-20 -left-[4px] w-px h-5 bg-neutral-400 dark:bg-neutral-600 rounded-l-md"></div>
             <div className="absolute top-16 -right-[4px] w-px h-7 bg-neutral-400 dark:bg-neutral-600 rounded-r-md"></div>
-            <div className="w-full h-full rounded-[1.1rem] overflow-hidden bg-neutral-900 dark:bg-[#101010]">
+            <div className="w-full h-full rounded-[1.1rem] overflow-hidden bg-white dark:bg-[#101010]">
                 <Image
                     className="opacity-0 group-hover:opacity-100 object-cover transition-opacity duration-500 h-full w-full"
                     height={1000}
@@ -48,7 +48,7 @@ export const IPad = () => {
             <div className="absolute top-[50px] -right-[4px] w-px h-10 bg-neutral-400 dark:bg-neutral-600 rounded-r-md"></div>
             <div className="absolute -top-[4px] left-20 h-px w-6 bg-neutral-400 dark:bg-neutral-600 rounded-t-md"></div>
             <div className="absolute -top-[4px] left-28 h-px w-6 bg-neutral-400 dark:bg-neutral-600 rounded-t-md"></div>
-            <div className="w-full h-full rounded-[1.1rem] overflow-hidden bg-neutral-900 dark:bg-[#101010]">
+            <div className="w-full h-full rounded-[1.1rem] overflow-hidden bg-white dark:bg-[#101010]">
                 <Image
                     className="opacity-0 group-hover:opacity-100 object-cover transition-opacity duration-500 h-full w-full"
                     height={750}
