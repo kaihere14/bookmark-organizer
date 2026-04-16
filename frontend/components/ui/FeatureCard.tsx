@@ -17,7 +17,7 @@ export default function SaveFromAnywhereCard() {
 
   return (
     <Card className="h-full flex flex-col gap-4" onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}>
-      <div className="flex-1 flex items-center justify-center relative">
+      <div className="flex-1 flex items-center justify-center relative overflow-hidden">
         {/* Orbiting tags */}
         {TAGS.map((tag, i) => (
           <motion.div

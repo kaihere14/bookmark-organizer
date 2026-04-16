@@ -1,4 +1,3 @@
-import { Bookmark } from "lucide-react"
 import Link from "next/link"
 
 const LINKS = [
@@ -41,42 +40,30 @@ const LINKS = [
 
 export default function Footer() {
   return (
-    <footer className="relative bg-neutral-950 overflow-hidden mt-40">
+    <footer className="relative bg-neutral-100 dark:bg-neutral-950 overflow-hidden">
       <div className="max-w-[1200px] mx-auto px-6 pt-16 pb-0">
-        {/* Top border */}
-        <div className="border-t border-neutral-800 mb-12" />
+        <div className="border-t border-neutral-300 dark:border-neutral-800 mb-12" />
 
-        {/* Links grid */}
-        <div className="grid grid-cols-5 gap-8">
-          {/* Brand */}
-          <div className="col-span-1 flex flex-col gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
+          <div className="col-span-2 md:col-span-1 flex flex-col gap-4">
             <div className="flex items-center gap-2">
-              <div className="h-9 w-9 rounded-lg bg-neutral-800 flex items-center justify-center">
-                <img
-                  src="bookmark.png"
-                  alt="logo"
-                  width={30}
-                  height={30}
-                />
+              <div className="h-9 w-9 rounded-lg bg-neutral-200 dark:bg-neutral-800 flex items-center justify-center">
+                <img src="bookmark.png" alt="logo" width={30} height={30} />
               </div>
-              <span className="font-semibold text-white">Boomark-organizer</span>
+              <span className="font-semibold text-neutral-900 dark:text-white">Boomark-organizer</span>
             </div>
             <p className="text-sm text-neutral-500 leading-relaxed">
               © {new Date().getFullYear()} Boomarki.<br />All rights reserved.
             </p>
           </div>
 
-          {/* Link columns */}
           {LINKS.map((col) => (
             <div key={col.heading} className="flex flex-col gap-4">
-              <span className="text-sm font-semibold text-white">{col.heading}</span>
+              <span className="text-sm font-semibold text-neutral-900 dark:text-white">{col.heading}</span>
               <ul className="flex flex-col gap-3">
                 {col.items.map((item) => (
                   <li key={item.label}>
-                    <Link
-                      href={item.href}
-                      className="text-sm text-neutral-500 hover:text-neutral-200 transition-colors duration-150"
-                    >
+                    <Link href={item.href} className="text-sm text-neutral-500 hover:text-neutral-200 transition-colors duration-150">
                       {item.label}
                     </Link>
                   </li>
@@ -86,9 +73,8 @@ export default function Footer() {
           ))}
         </div>
 
-        {/* Big wordmark */}
         <div className="mt-12 select-none pointer-events-none">
-          <p className="text-[clamp(4rem,15vw,14rem)] font-bold leading-none tracking-tighter text-neutral-900 whitespace-nowrap">
+          <p className="text-[clamp(4rem,15vw,14rem)] font-bold leading-none tracking-tighter text-neutral-300 dark:text-neutral-900 whitespace-nowrap">
             Bookmark
           </p>
         </div>

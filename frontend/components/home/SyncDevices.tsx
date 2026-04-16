@@ -4,14 +4,14 @@ import { SyncLine } from './SyncLine'
 
 const SyncDevices = () => {
   return (
-    <div className='mt-40 flex flex-col gap-10 max-w-6xl mx-auto'>
-      <h1 className='text-4xl font-bold tracking-tight self-center'>Sync Across Devices</h1>
+    <div className='mt-60 flex flex-col gap-10 max-w-6xl mx-auto px-4 md:px-0'>
+      <h1 className='text-3xl md:text-4xl font-bold tracking-tight self-center'>Sync Across Devices</h1>
 
-      <div className='ml-30 w-[80%]'>
+      <div className='hidden md:block ml-30 w-[80%]'>
         <SyncLine />
       </div>
 
-      <div className='flex justify-between items-end gap-30'>
+      <div className='flex flex-col md:flex-row justify-between items-center md:items-end gap-10 md:gap-30'>
         <div className="flex flex-col items-center gap-5">
           <Phone />
           <div className="flex flex-col items-center gap-2">

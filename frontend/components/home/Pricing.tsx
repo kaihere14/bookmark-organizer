@@ -56,23 +56,23 @@ const PLANS = [
 
 export default function Pricing() {
   return (
-    <section className="mt-40 flex flex-col items-center gap-4" id="pricing">
-      <h2 className="text-4xl font-bold tracking-tight">Simple, Transparent Pricing</h2>
+    <section className="mt-20 md:mt-40 flex flex-col items-center gap-4 px-4 md:px-0" id="pricing">
+      <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-center">Simple, Transparent Pricing</h2>
       <p className="text-neutral-500 dark:text-neutral-400 text-center max-w-md">
         Choose a plan that works best for you. No hidden fees.
       </p>
 
-      <div className="grid grid-cols-3 gap-0 w-full mt-10 rounded-2xl overflow-hidden border border-dashed border-neutral-200 dark:border-neutral-800">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-0 w-full mt-10 rounded-2xl overflow-hidden border border-dashed border-neutral-200 dark:border-neutral-800">
         {PLANS.map((plan, i) => (
           <div
             key={i}
             className={cn(
               "relative flex flex-col p-8 gap-6",
               plan.popular
-                ? "bg-neutral-900 dark:bg-neutral-950 text-white border-x border-dashed border-neutral-700"
+                ? "bg-neutral-900 dark:bg-neutral-950 text-white md:border-x border-y md:border-y-0 border-dashed border-neutral-700"
                 : "bg-white dark:bg-neutral-900",
-              i === 0 && "border-r border-dashed border-neutral-200 dark:border-neutral-800",
-              i === 2 && "border-l border-dashed border-neutral-200 dark:border-neutral-800",
+              i === 0 && "md:border-r border-b md:border-b-0 border-dashed border-neutral-200 dark:border-neutral-800",
+              i === 2 && "md:border-l border-t md:border-t-0 border-dashed border-neutral-200 dark:border-neutral-800",
             )}
           >
             {/* Header */}

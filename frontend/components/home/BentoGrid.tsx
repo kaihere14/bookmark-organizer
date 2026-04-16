@@ -196,19 +196,19 @@ function CollectionsCard() {
 
 const BentoGrid = () => {
   return (
-    <div className='mt-40 flex flex-col items-center gap-8'>
-      <h1 className='text-4xl font-bold'>Features</h1>
-      <div className='grid grid-cols-3 grid-rows-2 gap-3 w-full h-[600px]'>
-        <div className='row-span-2 rounded-xl overflow-hidden'>
+    <div className='mt-20 md:mt-40 flex flex-col items-center gap-8 px-4 md:px-0'>
+      <h1 className='text-3xl md:text-4xl font-bold'>Features</h1>
+      <div className='grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 gap-3 w-full md:h-[600px]'>
+        <div className='md:row-span-2 h-[400px] md:h-auto rounded-xl overflow-hidden'>
           <SaveFromAnywhereCard />
         </div>
-        <div className='row-span-1 rounded-xl overflow-hidden'>
+        <div className='md:row-span-1 h-[280px] md:h-auto rounded-xl overflow-hidden'>
           <SyncCard />
         </div>
-        <div className='row-span-2 rounded-xl overflow-hidden'>
+        <div className='md:row-span-2 h-[400px] md:h-auto rounded-xl overflow-hidden'>
           <CollectionsCard />
         </div>
-        <div className='row-span-1 rounded-xl overflow-hidden'>
+        <div className='md:row-span-1 h-[280px] md:h-auto rounded-xl overflow-hidden'>
           <SearchCard />
         </div>
       </div>
