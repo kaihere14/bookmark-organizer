@@ -5,9 +5,9 @@ import Image from "next/image";
 
 const HeroImages = () => {
     return (
-        <div className="absolute inset-0 top-32 pointer-events-none -z-10">
+        <div className="absolute inset-0 top-18 pointer-events-none -z-10">
             <motion.div
-                className="absolute top-42 left-10 w-full h-[90%]"
+                className="absolute top-42 left-1/2 -translate-x-1/2 md:left-10 md:translate-x-0 w-[85%] md:w-full h-[90%] scale-90 md:scale-100 origin-top-center md:origin-top-left"
                 initial={{ y: -150, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ ease: [0.11, 0, 0.5, 0], duration: 0.4, delay: 0.2 }}
@@ -22,7 +22,7 @@ const HeroImages = () => {
             </motion.div>
 
             <motion.div
-                className="absolute top-62 w-full h-[90%] -z-5"
+                className="absolute top-62 left-1/2 -translate-x-1/2 md:left-0 md:translate-x-0 w-[85%] md:w-full h-[90%] -z-5 scale-90 md:scale-100 origin-top-center md:origin-top-left"
                 initial={{ y: -150, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ ease: [0.11, 0, 0.5, 0], duration: 0.4 }}
