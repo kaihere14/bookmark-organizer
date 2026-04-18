@@ -6,7 +6,7 @@ const EmailLoginForm = () => {
             <span className='w-full border-1 border-dashed dark:border-neutral-800 mt-3'></span>
             <div className="flex flex-col w-full">
                 <input
-                    type="text"
+                    type="email"
                     className='bg-neutral-800 h-12 w-128 pl-2 mt-4 rounded text-white focus:outline-none focus:ring-1 focus:ring-neutral-700'
                     placeholder='Enter your email'
                 />
