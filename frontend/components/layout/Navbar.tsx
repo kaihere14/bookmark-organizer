@@ -34,7 +34,6 @@ export default function AppNavbar() {
                     >
                         {mounted ? (theme === "dark" ? <Sun size={18} /> : <Moon size={18} />) : <Moon size={18} />}
                     </button>
-                    <NavbarButton className="text-shadow-2xs" variant="secondary" href="/login">Sign in</NavbarButton>
                     <NavbarButton variant="dark" href="/login">Start for free</NavbarButton>
                 </div>
             </NavBody>
